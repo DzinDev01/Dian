@@ -48,37 +48,42 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
         }
       } 
       break 
+      case "halo": { 
+        await sleep(5000) 
+        await dzin.sendMessage(m.chat, { text: "halo juga" })
+      }
+      break
       case "halogaes": {
         await sleep(15000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
          await sleep(20000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
          await sleep(20000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
          await sleep(15000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
          await sleep(20000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
          await sleep(20000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
          await sleep(15000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
          await sleep(20000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
          await sleep(20000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
          await sleep(15000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
          await sleep(20000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
          await sleep(20000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
          await sleep(15000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
          await sleep(20000)
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
          await sleep(20000) 
-         await dzin.sendMessage("6283142823119@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
+         await dzin.sendMessage("6285143231522@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
       } 
       break
       default: 
