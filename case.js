@@ -32,58 +32,33 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
     const groupMetadata = m.isGroup ? await dzin.groupMetadata(m.chat).catch(e => {}) : '' 
     
     switch (command) { 
-      case "tiktok": {
-        if (!text) return m.reply(`*Contoh:*\n*${prefix+command} link*`) 
-        try {
-          const hasil = await tiktokDl(text) 
-          if (hasil && hasil.size_nowm) {
-            await dzin.sendFileUrl(m.chat, hasil.data[1].url, `*📍Title:* ${hasil.title}\n*⏳Duration:* ${hasil.duration}\n*🎃Author:* ${hasil.author.nickname} (@${hasil.author.fullname})`, m)
-          } else {
-            for (let i = 0; i < hasil.data.length; i++) {
-              await dzin.sendFileUrl(m.chat, hasil.data[i].url, `*🚀Image:* ${i+1}`, m)
-            }
-          }
-        } catch (err) {
-          console.log(err)
-        }
+      case "Tes": {
+        m.reply(`Hai`)
       } 
       break 
-      case "halo": { 
-        await sleep(5000) 
-        await dzin.sendMessage(m.chat, { text: "halo juga" })
-      }
-      break
-      case "halogaes": {
-        await sleep(15000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
-         await sleep(20000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
-         await sleep(20000) 
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
-         await sleep(15000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
-         await sleep(20000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
-         await sleep(20000) 
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
-         await sleep(15000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
-         await sleep(20000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
-         await sleep(20000) 
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
-         await sleep(15000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
-         await sleep(20000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
-         await sleep(20000) 
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
-         await sleep(15000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Hai Lisa! Aku mau ke Bali, nih. Pengen banget nikmatin pantainya, kamu?", ai: true }) 
-         await sleep(20000)
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Seru juga tuh! Bukankah udara di pegunungan bener-bener seger?", ai: true}) 
-         await sleep(20000) 
-         await dzin.sendMessage("6283854545783@s.whatsapp.net", { text: "Belum, masih brainstorming. Kamu mau gabung?", ai: true}) 
+      case "Rif": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: '.Tapi aku mau ke warnet nanti.' })
+      } 
+      break 
+      case "ngapain": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: '.Bukannya begitu, aku ada tugas disuruh cari teks anekdot di internet.' })
+      } 
+      break 
+      case "tugas": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: '.iya' })
+      } 
+      break 
+      case "kapan": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: '.Besok, makanya hari ini aku mau ke warnet.' })
+      } 
+      break 
+      case "Aku": {
+        await sleep(10000) 
+        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Kita bareng aja.' })
       } 
       break
       default: 
@@ -110,3 +85,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
+					     
