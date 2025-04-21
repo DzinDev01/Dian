@@ -32,36 +32,43 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
     const groupMetadata = m.isGroup ? await dzin.groupMetadata(m.chat).catch(e => {}) : '' 
     
     switch (command) { 
-      case "tes": {
+      case "tes": { 
+	if (!isCreator) return
         m.reply(`Hai`)
       } 
       break 
-      case "rif": {
+      case "rif": { 
+	if (!isCreator) return
         await sleep(10000) 
         await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Tapi aku mau ke warnet nanti.' })
       } 
       break 
-      case "ngapain": {
+      case "ngapain": { 
+	if (!isCreator) return
         await sleep(10000) 
         await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Bukannya begitu, aku ada tugas disuruh cari teks anekdot di internet.' })
       } 
       break 
-      case "tugas": {
+      case "tugas": { 
+	if (!isCreator) return
         await sleep(10000) 
         await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'iya' })
       } 
       break 
-      case "kapan": {
+      case "kapan": { 
+	if (!isCreator) return
         await sleep(10000) 
         await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Besok makanya hari ini aku mau ke warnet.' })
       } 
       break 
-      case "aku": {
+      case "aku": { 
+	if (!isCreator) return
         await sleep(10000) 
         await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Kita bareng aja.' })
       } 
       break  
       case "tapii": { 
+	if (!isCreator) return
         await sleep(10000) 
         await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Baiklah. tapi kamu iuran ya buat biaya cetak.' })
       }
