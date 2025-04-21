@@ -58,9 +58,13 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
       break 
       case "aku": {
         await sleep(10000) 
-        await dzin.sendMessage(`6283142823119@s.whatsapp.net`, { text: '.Kita bareng aja.' })
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: '.Kita bareng aja.' })
       } 
-      break
+      break  
+      case "tapii": { 
+        await sleep(10000) 
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Baiklah. tapi kamu iuran ya buat biaya cetak.' })
+      }
       default: 
       if (budy.startsWith('>')) {
 				if (!isCreator) return
