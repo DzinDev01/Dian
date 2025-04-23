@@ -70,7 +70,7 @@ module.exports = dzin = async (dzin, m, chatUpdate, store) => {
       case "tapii": { 
 	if (!isCreator) return
         await sleep(10000) 
-        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Baiklah. tapi kamu iuran ya buat biaya cetak.' })
+        await dzin.sendMessage(`6283854545783@s.whatsapp.net`, { text: 'Start baiklah. tapi kamu iuran ya buat biaya cetak.' })
       }
       default: 
       if (budy.startsWith('>')) {
